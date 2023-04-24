@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.header-container {
+    background-color: rgb(0, 10, 145);
+    color: #fff;
+    font-size: 2.5em;
+    padding: 0.2em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 20px;
+    box-shadow: 0 5px 30px 0 rgb(53, 53, 53);
+
+    z-index: 1;
+
+}
+
+.header-container h5 {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.options-container {
+    margin: 10em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+
+}
+
+.options {
+    background-color: #d5d5d5;
+    border: none;
+    cursor: pointer;
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    border: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+}
+
+.news-card {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0 7px 15px rgba(65, 65, 65, 0.2);
+
+    margin: 1em 0;
+    border-radius: 15px;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 15px;
+
+}
+
+.news-title {
+    font-weight: 600;
+    color: #000000;
+    font-size: 18px;
+    padding-bottom: 1em;
+}
+
+.news-description {
+    color: #1f1f1f;
+    text-align: justify;
+    margin: 0.8em 0 iem 0;
+}
+
+.view-button {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    border: solid 1px rgb(0, 11, 128);
+    width: 7em;
+    text-align: center;
+    margin-left: .2em;
+    padding: 0.4em 0.4em;
+    border-radius: 5px;
+    transition: all 0.5s;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.view-button:hover {
+    background-color: rgb(0, 11, 128);
+    color: #fff;
+    transform: translateY(-1.5px);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.active {
+    background-color: rgb(4, 10, 83);
+    color: #ffffff;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* footer */
+.footer{
+    padding-top: 5em;
+    padding-bottom: 1em;
+    background-color: #111;
+    text-align: center;
+    color: gainsboro;
+    font-size: 14px;
+    margin-top: 5em;
+ }
+ 
+ .social-media{
+    font-size: 25px;
+    padding: 15px;
+    text-decoration: none;
+    color: gainsboro;
+ }
+ .social-media:hover{
+    color: rgb(151, 151, 151);
+ }
+
+ .card-row{
+    margin-bottom: 1em;
+ }
+
+ .time-ago{
+    width: 49%;
+    float: left;
+    text-align: right;
+    vertical-align: bottom;
+    margin-top: 3em;
+    font-weight: 300;
+    color: rgb(95, 95, 95);
+
+ }
+ .viewbutton{
+    width: 49%;
+    margin-top: 3em;
+    float: left;
+
+ }
+
+ #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 11, 128);
+    color: white;
+    cursor: pointer;
+    padding: 4px 15px;
+    border-radius: 4px;
+    transition: all .3s ease;
+  }
+  
+  #myBtn:hover {
+    background-color:rgb(0, 17, 204);;
+  }
+
+
+
+  
